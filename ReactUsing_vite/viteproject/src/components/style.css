@@ -1,0 +1,9 @@
+.table{
+    background-color: black;
+    color: white;
+    /* border: 2px solid white; */
+}
+.table tr th, .table tr td{
+    padding: 1rem;
+    border: 2px solid white;
+}

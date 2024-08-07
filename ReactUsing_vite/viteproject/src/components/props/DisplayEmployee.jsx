@@ -1,9 +1,9 @@
 import SingleEmployee from "./SingleEmployee";
-
+import '../style.css';
 const DisplayEmployee = ({employeeData}) =>{
     return(
         <div>
-            <table>
+            <table className="table" style={{padding:'1rem'}}>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -24,10 +24,12 @@ const DisplayEmployee = ({employeeData}) =>{
                                     // <td>{item.edesignation}</td>
                                     // <td>{item.esalary}</td>
                                     // </tr>
-                                    <SingleEmployee singleItem = {item} index = {index}/>
+                                    // <SingleEmployee singleItem = {item} index = {index}/>
+                                    item.eage > 25 ? <SingleEmployee singleItem = {item} index = {index}/> : null
                                 )
                             })
                         }
+                        
                 </tbody>
             </table>
         </div>
