@@ -6,15 +6,17 @@ import FunctionalComponent from './components/FunctionalComponent'
 import ClassComponent from './components/ClassComponent'
 import ListKeys from './components/ListKeys'
 import PropsOne from './components/props/PropsOne'
+import CounterApp from './components/CounterApp'
 
 function App() {
 
   return (
     <>
-      <PropsOne />
+      <CounterApp />
+      {/* <PropsOne />
       <ListKeys />
       <FunctionalComponent />
-      <ClassComponent />
+      <ClassComponent /> */}
     </>
   )
 }
